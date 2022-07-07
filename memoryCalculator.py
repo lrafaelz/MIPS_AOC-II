@@ -1,4 +1,5 @@
 import math
+import mainMemory as memory
 
 bit = 1
 byte = 8
@@ -31,3 +32,5 @@ overheadPerSet = overheadperblock * ways
 cacheOverhead =  overheadPerSet * sets
 totalSize = ((cacheOverhead/byte)/Kbyte) + userSize
 print("Total size of cache: " + str(totalSize) + "KB\nTotal size of overhead: " + str((cacheOverhead/byte)/Kbyte) + "KB")
+
+memory.DRAM(sets, setSize)
